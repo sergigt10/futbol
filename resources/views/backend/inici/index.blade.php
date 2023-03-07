@@ -12,10 +12,10 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-help-circle"></i>
+                                                    <i class="mdi mdi-soccer"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Qui som</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Partits</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -28,10 +28,10 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-buffer"></i>
+                                                    <i class="mdi mdi-shield-half-full"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Serveis</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Club</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -44,10 +44,10 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-book-open-variant"></i>
+                                                    <i class="mdi mdi-account-multiple"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Història</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Equips</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -60,10 +60,10 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-certificate"></i>
+                                                    <i class="mdi mdi-account"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Certificacions</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Jugadors</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,10 +76,10 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-settings"></i>
+                                                    <i class="mdi mdi-file-multiple"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Centres</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Normativa interna</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,10 +92,10 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-source-pull"></i>
+                                                    <i class="mdi mdi-soccer"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Categories productes</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">F5</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -108,10 +108,10 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-apps"></i>
+                                                    <i class="mdi mdi-white-balance-sunny"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Productes</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Campus d'estiu</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,10 +124,26 @@
                                         <div class="card-body">
                                             <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                 <div class="icon-rounded-inverse-success icon-rounded-lg">
-                                                    <i class="mdi mdi-table"></i>
+                                                    <i class="mdi mdi-checkbox-multiple-blank"></i>
                                                 </div>
                                                 <div class="text-white">
-                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Taules de productes</p>
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Sliders</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-3 grid-margin stretch-card">
+                                <div class="card border-radius-2 bg-dark">
+                                    <a href="#">
+                                        <div class="card-body">
+                                            <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
+                                                <div class="icon-rounded-inverse-success icon-rounded-lg">
+                                                    <i class="mdi mdi-image"></i>
+                                                </div>
+                                                <div class="text-white">
+                                                    <p class="font-weight-medium mt-md-2 mt-xl-0 text-md-center text-xl-left" style="font-size: 1.5rem;">Banner</p>
                                                 </div>
                                             </div>
                                         </div>

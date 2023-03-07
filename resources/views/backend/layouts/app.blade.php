@@ -19,10 +19,8 @@
     @yield('styles')
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('backend/vendors/iconfonts/mdi/font/css/materialdesignicons.min.css') }}">
-    <!-- <link rel="stylesheet" href="{{ asset('backend/vendors/css/vendor.bundle.base.css') }}">
-    <link rel="stylesheet" href="{{ asset('backend/vendors/css/vendor.bundle.addons.css') }}"> -->
-    <link rel="stylesheet" href="{{ asset('backend/css/mim/style.css') }}">
+    @vite(['public/backend/vendors/iconfonts/mdi/font/css/materialdesignicons.min.css', 'public/backend/css/mim/style.css'])
+
     <link rel="shortcut icon" href="{{ asset('backend/images/favicon.ico') }}" />
 
     <meta name="robots" content="noindex,follow">
@@ -77,8 +75,8 @@
 
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#general-pages-1" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"quisoms") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-1">
-                            <i class="mdi mdi-help-circle menu-icon"></i>
-                            <span class="menu-title">Qui som</span>
+                            <i class="mdi mdi-soccer menu-icon"></i>
+                            <span class="menu-title">Partits</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"quisoms") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-1">
@@ -94,8 +92,8 @@
 
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#general-pages-2" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"serveis") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-2">
-                            <i class="mdi mdi-buffer menu-icon"></i>
-                            <span class="menu-title">Serveis</span>
+                            <i class="mdi mdi-shield-half-full menu-icon"></i>
+                            <span class="menu-title">Club</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"serveis") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-2">
@@ -111,8 +109,8 @@
 
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#general-pages-3" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"histories") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-3">
-                            <i class="mdi mdi-book-open-variant menu-icon"></i>
-                            <span class="menu-title">Història</span>
+                            <i class="mdi mdi-account-multiple menu-icon"></i>
+                            <span class="menu-title">Equips</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"histories") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-3">
@@ -135,8 +133,8 @@
 
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#general-pages-videoclip" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"certificacions") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-videoclip">
-                            <i class="mdi mdi-certificate menu-icon"></i>
-                            <span class="menu-title">Certificacions</span>
+                            <i class="mdi mdi-account menu-icon"></i>
+                            <span class="menu-title">Jugadors</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"certificacions") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-videoclip">
@@ -152,8 +150,8 @@
 
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#general-pages-4" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"centres") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-4">
-                            <i class="mdi mdi-settings menu-icon"></i>
-                            <span class="menu-title">Centres</span>
+                            <i class="mdi mdi-file-multiple menu-icon"></i>
+                            <span class="menu-title">Normativa interna</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"centres") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-4">
@@ -176,8 +174,8 @@
 
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#general-pages-5" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"categories") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-5">
-                            <i class="mdi mdi-source-pull menu-icon"></i>
-                            <span class="menu-title">Categories prod.</span>
+                            <i class="mdi mdi-soccer menu-icon"></i>
+                            <span class="menu-title">F5</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"categories") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-5">
@@ -206,8 +204,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" data-toggle="collapse" href="#general-pages-6" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"productes") !== false || strpos($_SERVER['REQUEST_URI'] ,"taules") !== false ) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-6">
-                            <i class="mdi mdi-apps menu-icon"></i>
-                            <span class="menu-title">Productes</span>
+                            <i class="mdi mdi-white-balance-sunny menu-icon"></i>
+                            <span class="menu-title">Campus d'estiu</span>
                             <i class="menu-arrow"></i>
                         </a>
                         <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"productes") !== false || strpos($_SERVER['REQUEST_URI'] ,"taules") !== false ) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-6">
@@ -241,6 +239,55 @@
                             </ul>
                         </div>
                     </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#general-pages-4" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"centres") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-7">
+                            <i class="mdi mdi-checkbox-multiple-blank menu-icon"></i>
+                            <span class="menu-title">Sliders</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"centres") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-7">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ (request()->is('backend/centres/create')) ? 'active' : '' }}" href="#">
+                                        Inserir
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ ( (request()->is('backend/centres')) ||  (request()->is('backend/centres/*/edit'))) ? 'active' : '' }}" href="#">
+                                        Modificar
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#general-pages-4" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"centres") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-8">
+                            <i class="mdi mdi-image menu-icon"></i>
+                            <span class="menu-title">Banner</span>
+                            <i class="menu-arrow"></i>
+                        </a>
+                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"centres") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-8">
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ (request()->is('backend/centres/create')) ? 'active' : '' }}" href="#">
+                                        Inserir
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ ( (request()->is('backend/centres')) ||  (request()->is('backend/centres/*/edit'))) ? 'active' : '' }}" href="#">
+                                        Modificar
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
                 </ul>
             </nav>
             <!-- NAVBAR FI -->
@@ -257,11 +304,6 @@
 </div>
     <script src="{{ asset('backend/vendors/js/vendor.bundle.base.js') }}"></script>
     <script src="{{ asset('backend/vendors/js/vendor.bundle.addons.js') }}"></script>
-    <!-- <script src="{{ asset('backend/js/off-canvas.js') }}"></script>
-    <script src="{{ asset('backend/js/hoverable-collapse.js') }}"></script>
-    <script src="{{ asset('backend/js/template.js') }}"></script>
-    <script src="{{ asset('backend/js/settings.js') }}"></script>
-    <script src="{{ asset('backend/js/todolist.js') }}"></script> -->
     @yield('scripts')
 </body>
 </html>

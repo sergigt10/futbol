@@ -51,8 +51,8 @@
             </div>
         </div>
     </div>
-    @vite(['backend/vendors/js/vendor.bundle.base.js'])
-
+    
+    <script src="{{ asset('backend/vendors/js/vendor.bundle.base.js') }}"></script>
 </body>
 
 </html>

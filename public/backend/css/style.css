@@ -15306,7 +15306,7 @@ button.bg-light:focus,
 }
 
 .bg-dark, .settings-panel .color-tiles .tiles.dark {
-  background-color: #0c466d !important;
+  background-color: #22478e !important;
 }
 
 a.bg-dark:hover, .settings-panel .color-tiles a.tiles.dark:hover, a.bg-dark:focus, .settings-panel .color-tiles a.tiles.dark:focus,
@@ -27568,7 +27568,7 @@ div.tagsinput span.tag a {
 }
 
 .content-wrapper {
-  background: #d9e1e5; /* #d9e1e5 */
+  background: #d2dae8; /* #a6b5d1 */
   padding: 1.75rem 1.312rem;
   width: 100%;
   -webkit-flex-grow: 1;
@@ -27733,7 +27733,7 @@ div.tagsinput span.tag a {
 }
 
 .sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link {
-  background: #b6c7d3;
+  background: #a6b5d1;
   color: #000;
 }
 
@@ -29568,7 +29568,7 @@ div.tagsinput span.tag a {
 }
 
 .table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: #b6c7d3;
+  background-color: #a6b5d1;
 }
 
 select.form-control, select.asColorPicker-input, .dataTables_wrapper select, .jsgrid .jsgrid-table .jsgrid-filter-row select, .select2-container--default select.select2-selection--single, .select2-container--default .select2-selection--single select.select2-search__field, select.typeahead, select.tt-query, select.tt-hint{
