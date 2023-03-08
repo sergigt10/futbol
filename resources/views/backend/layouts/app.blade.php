@@ -79,10 +79,17 @@
                             <span class="menu-title">Partits</span>
                             <i class="menu-arrow"></i>
                         </a>
-                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"quisoms") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-1">
+                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"partits") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-1">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> 
-                                    <a class="nav-link {{ ( (request()->is('backend/quisoms')) ||  (request()->is('backend/quisoms/*/edit'))) ? 'active' : '' }}" href="#">
+                                    <a class="nav-link {{ ( (request()->is('backend/partits')) ||  (request()->is('backend/partits/*/edit'))) ? 'active' : '' }}" href="{{ route('backend.partits.create') }}">
+                                        Inserir
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ ( (request()->is('backend/partits')) ||  (request()->is('backend/partits/*/edit'))) ? 'active' : '' }}" href="#">
                                         Modificar
                                     </a>
                                 </li>
@@ -108,23 +115,51 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#general-pages-3" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"histories") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-3">
+                        <a class="nav-link" data-toggle="collapse" href="#general-pages-3" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"equips") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-3">
                             <i class="mdi mdi-account-multiple menu-icon"></i>
                             <span class="menu-title">Equips</span>
                             <i class="menu-arrow"></i>
                         </a>
-                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"histories") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-3">
+                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"equips") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-3">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> 
-                                    <a class="nav-link {{ (request()->is('backend/histories/create')) ? 'active' : '' }}" href="#">
-                                        Inserir
+                                    <a class="nav-link {{ (request()->is('backend/equips/create')) ? 'active' : '' }}" href="{{ route('backend.equips.create') }}">
+                                        Inserir equip
                                     </a>
                                 </li>
                             </ul>
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> 
-                                    <a class="nav-link {{ ( (request()->is('backend/histories')) ||  (request()->is('backend/histories/*/edit'))) ? 'active' : '' }}" href="#">
-                                        Modificar
+                                    <a class="nav-link {{ ( (request()->is('backend/equips')) ||  (request()->is('backend/equips/*/edit'))) ? 'active' : '' }}" href="{{ route('backend.equips.index') }}">
+                                        Modificar equip
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ (request()->is('backend/equips/jugadors/create')) ? 'active' : '' }}" href="{{ route('backend.equips.jugadors.create') }}">
+                                        Inserir jugador <i class="mdi mdi-account menu-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ ( (request()->is('backend/equips/jugadors')) ||  (request()->is('backend/equips/jugadors/*/edit'))) ? 'active' : '' }}" href="{{ route('backend.equips.jugadors.index') }}">
+                                        Modificar jugador <i class="mdi mdi-account menu-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ (request()->is('backend/equips/create')) ? 'active' : '' }}" href="#">
+                                        Inserir staff tècnic <i class="mdi mdi-account-outline menu-icon"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column sub-menu">
+                                <li class="nav-item"> 
+                                    <a class="nav-link {{ ( (request()->is('backend/equips')) ||  (request()->is('backend/equips/*/edit'))) ? 'active' : '' }}" href="#">
+                                        Modificar staff tècnic <i class="mdi mdi-account-outline menu-icon"></i>
                                     </a>
                                 </li>
                             </ul>
@@ -132,15 +167,15 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" data-toggle="collapse" href="#general-pages-videoclip" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"certificacions") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-videoclip">
-                            <i class="mdi mdi-account menu-icon"></i>
-                            <span class="menu-title">Jugadors</span>
+                        <a class="nav-link" data-toggle="collapse" href="#general-pages-22" <?php echo (strpos($_SERVER['REQUEST_URI'] ,"serveis") !== false) ? 'aria-expanded="true"' : 'aria-expanded="false"'; ?> aria-controls="general-pages-22">
+                            <i class="mdi mdi-newspaper menu-icon"></i>
+                            <span class="menu-title">Cròniques</span>
                             <i class="menu-arrow"></i>
                         </a>
-                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"certificacions") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-videoclip">
+                        <div <?php echo (strpos($_SERVER['REQUEST_URI'] ,"serveis") !== false) ? 'class="collapse show"' : 'class="collapse"'; ?> id="general-pages-22">
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> 
-                                    <a class="nav-link {{ ( (request()->is('backend/certificacions')) ||  (request()->is('backend/certificacions/*/edit'))) ? 'active' : '' }}" href="#">
+                                    <a class="nav-link {{ ( (request()->is('backend/serveis')) ||  (request()->is('backend/serveis/*/edit'))) ? 'active' : '' }}" href="#">
                                         Modificar
                                     </a>
                                 </li>
