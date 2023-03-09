@@ -17,7 +17,7 @@
                         </div>
                     @endif
                     <br>
-                    <h2>Jugadors</h2>
+                    <h2>Staff tècnic</h2>
                     <br>
                     <div class="row">
                         <div class="col-12">
@@ -27,60 +27,49 @@
                                         <tr>
                                             <th>Nom i cognoms</th>
                                             <th>Equip</th>
-                                            <th>Dorsal</th>
-                                            <th>Posició</th>
+                                            <th>Càrrec</th>
                                             <th data-orderable="false">Editar</th>
                                             <th data-orderable="false">Eliminar</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($jugadors as $jugador)
+                                        @foreach($tecnics as $tecnic)
                                             <tr>
                                                 <td>
-                                                    <a href="{{ route('backend.equips.jugadors.edit', ['jugador' => $jugador->id]) }}" style="color: black;">
-                                                        {{ $jugador->nom }}
+                                                    <a href="{{ route('backend.equips.tecnics.edit', ['tecnic' => $tecnic->id]) }}" style="color: black;">
+                                                        {{ $tecnic->nom }}
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href="{{ route('backend.equips.jugadors.edit', ['jugador' => $jugador->id]) }}" style="color: black;">
-                                                        {{ $jugador->equip->categoria }}
+                                                    <a href="{{ route('backend.equips.tecnics.edit', ['tecnic' => $tecnic->id]) }}" style="color: black;">
+                                                        {{ $tecnic->equip->categoria }}
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href="{{ route('backend.equips.jugadors.edit', ['jugador' => $jugador->id]) }}" style="color: black;">
-                                                        {{ $jugador->dorsal }}
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="{{ route('backend.equips.jugadors.edit', ['jugador' => $jugador->id]) }}" style="color: black;">
-                                                        {{ $jugador->posicio }}
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a href="{{ route('backend.equips.jugadors.edit', ['jugador' => $jugador->id]) }}" style="color: black;">
+                                                    <a href="{{ route('backend.equips.tecnics.edit', ['tecnic' => $tecnic->id]) }}" style="color: black;">
                                                         <i class="mdi mdi-pencil menu-icon"></i>
                                                     </a>
                                                 </td>
                                                 <td>
-                                                    <a href="" style="color: black;" data-toggle="modal" data-target="#exampleModalCenter{{$jugador->id}}">
+                                                    <a href="" style="color: black;" data-toggle="modal" data-target="#exampleModalCenter{{$tecnic->id}}">
                                                         <i class="mdi mdi-close-circle menu-icon"></i>
                                                     </a>
                                                 </td>
                                             </tr>
-                                            <div class="modal fade" id="exampleModalCenter{{$jugador->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                            <div class="modal fade" id="exampleModalCenter{{$tecnic->id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title" id="exampleModalLongTitle">Eliminar?</h5>
                                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
+                                                                <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
                                                     <div class="modal-body">
-                                                        Segur que vols esborrar: {{ $jugador->categoria }}
+                                                        Segur que vols esborrar: {{ $tecnic->categoria }}
                                                     </div>
                                                         <div class="modal-footer">
-                                                            <form class="pull-right" action="{{ route('backend.equips.jugadors.destroy', ['jugador' => $jugador->id]) }}" method="POST">
+                                                            <form class="pull-right" action="{{ route('backend.equips.tecnics.destroy', ['tecnic' => $tecnic->id]) }}" method="POST">
                                                                 @csrf
                                                                 @method('DELETE')
                                                                 <input type="submit" value="Esborrar" class="btn btn-danger">

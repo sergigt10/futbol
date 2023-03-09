@@ -68,9 +68,12 @@ class EquipController extends Controller
      * @param  \App\Models\Equip  $equip
      * @return \Illuminate\Http\Response
      */
-    public function show(Equip $equip)
+    public function show()
     {
-        //
+        $equips = Equip::all();
+
+        return view('backend.equips.show')
+            ->with('equips', $equips);
     }
 
     /**

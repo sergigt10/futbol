@@ -144,21 +144,21 @@
                             </ul>
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> 
-                                    <a class="nav-link {{ ( (request()->is('backend/equips/jugadors')) ||  (request()->is('backend/equips/jugadors/*/edit'))) ? 'active' : '' }}" href="{{ route('backend.equips.jugadors.index') }}">
+                                    <a class="nav-link {{ ( (request()->is('backend/equips/show/jugadors')) ||  (request()->is('backend/equips/jugadors/show/*')) )  ? 'active' : '' }}" href="http://127.0.0.1:8000/backend/equips/show/jugadors#jugadors">
                                         Modificar jugador <i class="mdi mdi-account menu-icon"></i>
                                     </a>
                                 </li>
                             </ul>
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> 
-                                    <a class="nav-link {{ (request()->is('backend/equips/create')) ? 'active' : '' }}" href="#">
+                                    <a class="nav-link {{ (request()->is('backend/equips/tecnics/create')) ? 'active' : '' }}" href="{{ route('backend.equips.tecnics.create') }}">
                                         Inserir staff tècnic <i class="mdi mdi-account-outline menu-icon"></i>
                                     </a>
                                 </li>
                             </ul>
                             <ul class="nav flex-column sub-menu">
                                 <li class="nav-item"> 
-                                    <a class="nav-link {{ ( (request()->is('backend/equips')) ||  (request()->is('backend/equips/*/edit'))) ? 'active' : '' }}" href="#">
+                                    <a class="nav-link {{ ( (request()->is('backend/equips/show/tecnics')) ||  (request()->is('backend/equips/tecnics/show/*'))) ? 'active' : '' }}" href="http://127.0.0.1:8000/backend/equips/show/tecnics#tecnics">
                                         Modificar staff tècnic <i class="mdi mdi-account-outline menu-icon"></i>
                                     </a>
                                 </li>
