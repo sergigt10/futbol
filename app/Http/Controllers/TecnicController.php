@@ -56,7 +56,7 @@ class TecnicController extends Controller
         $tecnic->save();
 
         // Redireccionar
-        return redirect()->action('TecnicController@index')->with('estat', 'Tècnic creat correctament');
+        return redirect()->action('EquipController@show')->with('estat', 'Tècnic creat correctament');
     }
 
     /**
@@ -107,7 +107,7 @@ class TecnicController extends Controller
         $tecnic->save();
 
         // Redireccionar
-        return redirect()->action('TecnicController@index')->with('estat', 'Tècnic modificat correctament');
+        return redirect()->action('EquipController@show')->with('estat', 'Tècnic modificat correctament');
     }
 
     /**
@@ -125,6 +125,6 @@ class TecnicController extends Controller
 
         $tecnic->delete();
         
-        return redirect()->action('TecnicController@index');
+        return redirect()->action('EquipController@show');
     }
 }

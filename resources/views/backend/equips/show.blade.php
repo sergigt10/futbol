@@ -38,7 +38,7 @@
                             @foreach ($equips as $equip)
                                 <div class="col-md-3 grid-margin stretch-card">
                                     <div class="card border-radius-2 bg-dark">
-                                        <a href="{{ route('backend.equips.tecnics.index', ['tecnic' => $equip->id]) }}">
+                                        <a href="{{ route('backend.equips.tecnics.index', ['equip' => $equip->id]) }}">
                                             <div class="card-body">
                                                 <div class="d-flex flex-md-column flex-xl-row flex-wrap  align-items-center justify-content-between">
                                                     <div class="icon-rounded-inverse-success icon-rounded-lg">

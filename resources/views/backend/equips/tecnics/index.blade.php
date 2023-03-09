@@ -47,6 +47,11 @@
                                                 </td>
                                                 <td>
                                                     <a href="{{ route('backend.equips.tecnics.edit', ['tecnic' => $tecnic->id]) }}" style="color: black;">
+                                                        {{ $tecnic->carrec }}
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="{{ route('backend.equips.tecnics.edit', ['tecnic' => $tecnic->id]) }}" style="color: black;">
                                                         <i class="mdi mdi-pencil menu-icon"></i>
                                                     </a>
                                                 </td>

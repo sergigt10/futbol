@@ -57,7 +57,7 @@ class JugadorController extends Controller
         $jugador->save();
 
         // Redireccionar
-        return redirect()->action('EquipController@index')->with('estat', 'Jugador creat correctament');
+        return redirect()->action('EquipController@show')->with('estat', 'Jugador creat correctament');
     }
 
     /**
@@ -110,7 +110,7 @@ class JugadorController extends Controller
         $jugador->save();
 
         // Redireccionar
-        return redirect()->action('EquipController@index')->with('estat', 'Jugador modificat correctament');
+        return redirect()->action('EquipController@show')->with('estat', 'Jugador modificat correctament');
     }
 
     /**
@@ -128,6 +128,6 @@ class JugadorController extends Controller
 
         $jugador->delete();
         
-        return redirect()->action('EquipController@index');
+        return redirect()->action('EquipController@show');
     }
 }

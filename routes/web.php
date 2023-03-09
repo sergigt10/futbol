@@ -38,7 +38,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::delete('backend/equips/jugadors/{jugador}', 'JugadorController@destroy')->name('backend.equips.jugadors.destroy');
 
     /* Tècnics */
-    Route::get('backend/equips/tecnics/show/{tecnic}', 'TecnicController@index')->name('backend.equips.tecnics.index');
+    Route::get('backend/equips/tecnics/show/{equip}', 'TecnicController@index')->name('backend.equips.tecnics.index');
     Route::get('backend/equips/tecnics/create', 'TecnicController@create')->name('backend.equips.tecnics.create');
     Route::post('backend/equips/tecnics', 'TecnicController@store')->name('backend.equips.tecnics.store');
     Route::get('backend/equips/tecnics/{tecnic}/edit', 'TecnicController@edit')->name('backend.equips.tecnics.edit');
